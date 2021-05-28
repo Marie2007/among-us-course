@@ -1,0 +1,16 @@
+title: Among Us
+description: Pour utiliser le chat de proximité pendant les parties de Among Us.
+template:
+  repo: among-us-template
+  name: among-us
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
